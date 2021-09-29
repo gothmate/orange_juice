@@ -9,6 +9,7 @@
 }
 
 body {
+  background: var(--ice);
   font-family: "calibri";
 }
 
@@ -36,6 +37,7 @@ header {
 
 aside {
   background: var(--laranja);
+  border-radius: 0 20% 0 0;
   grid-area: a;
 }
 
