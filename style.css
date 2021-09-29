@@ -32,7 +32,6 @@ header {
   justify-content: space-between;
   padding: 0 15px;
   border-bottom: 1px solid var(--laranja);
-  box-shadow: 3px 3px 2px var(--laranja);
 }
 
 aside {
@@ -89,6 +88,25 @@ header p {
 .item-menu a {
   text-decoration: none;
   color: var(--laranja);
+  padding: 0.3rem 0.5rem;
   font-weight: bold;
   font-size: 1.3rem;
+  transition: ease-in-out 300ms;
+}
+
+.item-menu a:hover {
+  color: var(--light-blue);
+  border-bottom: 2px solid var(--purple);
+}
+
+@media (max-width: 635px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 30vh 50vh 10vh;
+    grid-template-areas: "h" 
+                          "a"
+                          "m"
+                          "f";
+  }
+  
 }
